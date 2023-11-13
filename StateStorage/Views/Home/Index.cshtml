@@ -1,0 +1,13 @@
+﻿@model DataModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post" asp-action="Index">
+    <p>Adress</p>
+    <input asp-for="Adress" />
+    <p>Time to end</p>
+    <input asp-for="End" />
+    <button>Send</button>
+</form>
